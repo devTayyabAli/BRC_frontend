@@ -1,0 +1,4276 @@
+﻿
+> vuexy-nextjs-admin-template@1.2.0 build D:\Sahara\frontend
+> next build
+
+pnpm : ÔÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At line:1 char:1
++ pnpm build 2>&1 | 
+Out-File -FilePath 
+build_v2.log -Encoding utf8
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (ÔÜá  
+   Warning: Ne...not be    
+ correct.:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of D:\Sahara\pack
+age-lock.json as the root 
+directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/d
+ocs/app/api-reference/confi
+g/next-config-js/turbopack#
+root-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * D:\Sahara\frontend\pnp
+m-lock.yaml
+
+Ôû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env
+- Experiments (use with caution):
+  ┬À clientTraceMetadata
+
+  Running TypeScript ...
+  Finished TypeScript in 123ms ...
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build 
+failed with 55 errors:
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:3:1
+Module not found: Can't 
+resolve '@wagmi/core/connec
+tors/coinbaseWallet'
+  [90m1 |[0m 
+[36mimport[0m [32m'@web3
+modal/polyfills'[0m;
+  [90m2 |[0m 
+[36mimport[0m { 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { [3
+3mCoinbaseWalletConnector[
+0m } [36mfrom[0m [32m'@w
+agmi/core/connectors/coinba
+seWallet'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m5 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/walletConne
+ct'[0m;
+  [90m6 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m'@wagmi/
+core/providers/public'[0m;
+
+
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+onnectors/EIP6963Connector.
+js:13:1
+Module not found: Can't 
+resolve '@wagmi/core/connec
+tors/injected'
+  [90m11 |[0m };
+  [90m12 |[0m 
+[36mvar[0m _EIP6963Connec
+tor_defaultProvider, _EIP69
+63Connector_eip6963Wallet;
+[31m[1m>[0m [90m13 
+|[0m [36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+getAddress } [36mfrom[0m 
+[32m'viem'[0m;
+  [90m15 |[0m 
+[36mconst[0m 
+connectedRdnsKey = 
+[32m'connectedRdns'[0m;
+  [90m16 |[0m 
+[36mexport[0m 
+[36mclass[0m 
+[33mEIP6963Connector[0m 
+[36mextends[0m 
+[33mInjectedConnector[0m 
+{
+
+
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/connectors/EIP6963Connec
+tor.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/lo
+gin/index.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:4:1
+Module not found: Can't 
+resolve '@wagmi/core/connec
+tors/injected'
+  [90m2 |[0m 
+[36mimport[0m { 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+  [90m3 |[0m 
+[36mimport[0m { [33mCoin
+baseWalletConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/coinbaseWal
+let'[0m;
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^[0m
+  [90m5 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/walletConne
+ct'[0m;
+  [90m6 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m'@wagmi/
+core/providers/public'[0m;
+  [90m7 |[0m 
+[36mimport[0m { 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m'../co
+nnectors/EIP6963Connector.j
+s'[0m;
+
+
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:5:1
+Module not found: Can't 
+resolve '@wagmi/core/connec
+tors/walletConnect'
+  [90m3 |[0m 
+[36mimport[0m { [33mCoin
+baseWalletConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/coinbaseWal
+let'[0m;
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+[31m[1m>[0m [90m5 
+|[0m [36mimport[0m { [3
+3mWalletConnectConnector[0
+m } [36mfrom[0m [32m'@wa
+gmi/core/connectors/walletC
+onnect'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m'@wagmi/
+core/providers/public'[0m;
+  [90m7 |[0m 
+[36mimport[0m { 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m'../co
+nnectors/EIP6963Connector.j
+s'[0m;
+  [90m8 |[0m 
+[36mimport[0m { 
+[33mEmailConnector[0m } 
+[36mfrom[0m [32m'../conn
+ectors/EmailConnector.js'[
+0m;
+
+
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:6:1
+Module not found: Can't 
+resolve '@wagmi/core/provid
+ers/public'
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m5 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/walletConne
+ct'[0m;
+[31m[1m>[0m [90m6 
+|[0m [36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m'@wagmi/
+core/providers/public'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m'../co
+nnectors/EIP6963Connector.j
+s'[0m;
+  [90m8 |[0m 
+[36mimport[0m { 
+[33mEmailConnector[0m } 
+[36mfrom[0m [32m'../conn
+ectors/EmailConnector.js'[
+0m;
+  [90m9 |[0m 
+[36mimport[0m { 
+walletConnectProvider } 
+[36mfrom[0m 
+[32m'./provider.js'[0m;
+
+
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+onnectors/EmailConnector.js
+:1:1
+Export Connector doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+[33mConnector[0m } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+[33mW3mFrameProvider[0m 
+} [36mfrom[0m [32m'@web3
+modal/wallet'[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+createWalletClient, 
+custom, 
+[33mSwitchChainError[0m 
+} [36mfrom[0m 
+[32m'viem'[0m;
+  [90m4 |[0m 
+[36mexport[0m 
+[36mclass[0m 
+[33mEmailConnector[0m 
+[36mextends[0m 
+[33mConnector[0m {
+
+The export Connector was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/@wagmi+core@3.4.7_@tans
+tack_c40d7800df6e026b30d742
+26af2a9e73/node_modules/@wa
+gmi/core/dist/esm/exports/i
+ndex.js [client] 
+(ecmascript).
+Did you mean to import 
+connect?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/connectors/EmailConnecto
+r.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:2:1
+Export configureChains 
+doesn't exist in target 
+module
+  [90m1 |[0m 
+[36mimport[0m [32m'@web3
+modal/polyfills'[0m;
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { [33mCoin
+baseWalletConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/coinbaseWal
+let'[0m;
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m5 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/walletConne
+ct'[0m;
+
+The export configureChains 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import Conn
+ectorChainMismatchError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/de
+ployContract.js:1:1
+Export deployContract 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+deployContract [36mas[0m 
+viem_deployContract, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/deployContract */[0m
+
+The export deployContract 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+readContract?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/deployContract.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchBalance 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchBalance 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+getBalance?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchEnsAvatar 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchEnsAvatar 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+getEnsAvatar?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchEnsName 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchEnsName 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+getEnsName?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tBlobBaseFee.js:1:1
+Export getBlobBaseFee 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getBlobBaseFee [36mas[0m 
+viem_getBlobBaseFee, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getBlobBaseFee */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36mfunction[0m 
+getBlobBaseFee(config, 
+parameters = {}) {
+
+The export getBlobBaseFee 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+getBlock?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getBlobBaseFee.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tCallsStatus.js:1:1
+Export getCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getCallsStatus [36mas[0m 
+viem_getCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getCallsStatus */[0m
+
+The export getCallsStatus 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+getTxpoolStatus?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tCapabilities.js:1:1
+Export getCapabilities 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getCapabilities 
+[36mas[0m 
+viem_getCapabilities, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getCapabilities */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getCapabilities(config, 
+parameters = {}) {
+
+The export getCapabilities 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+getFilterLogs?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getCapabilities.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tContractEvents.js:1:1
+Export getContractEvents 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getContractEvents 
+[36mas[0m 
+viem_getContractEvents, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/actions/
+getContractEvents */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getContractEvents(config, 
+parameters) {
+
+The export 
+getContractEvents was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[client] (ecmascript).
+Did you mean to import 
+watchContractEvent?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getContractEvents.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export getNetwork doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export getNetwork was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/@wagmi+core@3.4.7_@tans
+tack_c40d7800df6e026b30d742
+26af2a9e73/node_modules/@wa
+gmi/core/dist/esm/exports/i
+ndex.js [client] 
+(ecmascript).
+Did you mean to import 
+getFeeHistory?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tProof.js:1:1
+Export getProof doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getProof [36mas[0m 
+viem_getProof, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getProof */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getProof(config, 
+parameters) {
+
+The export getProof was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [client] (ecmascript).
+Did you mean to import 
+getPermissions?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getProof.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export mainnet doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export mainnet was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+@wagmi+core@3.4.7_@tanstack
+_c40d7800df6e026b30d74226af
+2a9e73/node_modules/@wagmi/
+core/dist/esm/exports/index
+.js [client] (ecmascript).
+Did you mean to import 
+disconnect?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndCalls.js:1:1
+Export sendCalls doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendCalls [36mas[0m 
+viem_sendCalls, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendCalls */[0m
+
+The export sendCalls was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [client] (ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendCalls.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndCallsSync.js:1:1
+Export sendCallsSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendCallsSync [36mas[0m 
+viem_sendCallsSync, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendCallsSync */[0m
+
+The export sendCallsSync 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendCallsSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndTransactionSync.js:1:1
+Export sendTransactionSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendTransactionSync 
+[36mas[0m 
+viem_sendTransactionSync } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendTransactionSync 
+*/[0m
+
+The export 
+sendTransactionSync was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [client] (ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendTransactionSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/sh
+owCallsStatus.js:1:1
+Export showCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+showCallsStatus 
+[36mas[0m 
+viem_showCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/showCallsStatus */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+showCallsStatus(config, 
+parameters) {
+
+The export showCallsStatus 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+call?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/showCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export switchNetwork 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export switchNetwork 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+switchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/wa
+itForCallsStatus.js:1:1
+Export waitForCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+waitForCallsStatus 
+[36mas[0m 
+viem_waitForCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/waitForCallsStatus 
+*/[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+waitForCallsStatus(config, 
+parameters) {
+
+The export 
+waitForCallsStatus was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[client] (ecmascript).
+Did you mean to import 
+waitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/waitForCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export watchNetwork 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export watchNetwork 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+watchAsset?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/connectors
+/injected.js:1:1
+Export withRetry doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...oHex, [33mResourc
+eUnavailableRpcError[0m, 
+[33mSwitchChainError[0m, 
+[33mUserRejectedRequestErr
+or[0m, withRetry...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[33mrror[0m } 
+[36mfrom[0m [32m'../erro
+rs/config.js'[0m;
+  [90m3 |[0m 
+...[33mor[0m } 
+[36mfrom[0m [32m'../erro
+rs/connector.js'[0m;
+  [90m4 |[0m 
+...[36mrom[0m [32m'./cre
+ateConnector.js'[0m;
+
+The export withRetry was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[client] (ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/connec
+tors/injected.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/transports
+/connector.js:1:1
+Export withRetry doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m 
+...[33mnectedError[0m, 
+createTransport, 
+hexToNumber, [33mProviderD
+isconnectedError[0m, 
+withRetry, withTim...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m ...able_conn
+ector(connector, config = 
+{}) {
+  [90m3 |[0m ... 
+connector;
+  [90m4 |[0m 
+...[32monnector'[0m, 
+name = 
+[32m'Connector'[0m, 
+retryDelay } = config;
+
+The export withRetry was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[client] (ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/transp
+orts/connector.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/connectors
+/injected.js:1:1
+Export withTimeout doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...oHex, [33mResourc
+eUnavailableRpcError[0m, 
+[33mSwitchChainError[0m, 
+[33mUserRejectedRequestErr
+or[0m, withRetry...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[33mrror[0m } 
+[36mfrom[0m [32m'../erro
+rs/config.js'[0m;
+  [90m3 |[0m 
+...[33mor[0m } 
+[36mfrom[0m [32m'../erro
+rs/connector.js'[0m;
+  [90m4 |[0m 
+...[36mrom[0m [32m'./cre
+ateConnector.js'[0m;
+
+The export withTimeout was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[client] (ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/connec
+tors/injected.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/transports
+/connector.js:1:1
+Export withTimeout doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m 
+...[33mnectedError[0m, 
+createTransport, 
+hexToNumber, [33mProviderD
+isconnectedError[0m, 
+withRetry, withTim...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m ...able_conn
+ector(connector, config = 
+{}) {
+  [90m3 |[0m ... 
+connector;
+  [90m4 |[0m 
+...[32monnector'[0m, 
+name = 
+[32m'Connector'[0m, 
+retryDelay } = config;
+
+The export withTimeout was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[client] (ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/transp
+orts/connector.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/wr
+iteContractSync.js:1:1
+Export writeContractSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+writeContractSync 
+[36mas[0m 
+viem_writeContractSync, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/writeContractSync 
+*/[0m
+
+The export 
+writeContractSync was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[client] (ecmascript).
+Did you mean to import 
+writeContract?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/writeContractSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+onnectors/EmailConnector.js
+:1:1
+Export Connector doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+[33mConnector[0m } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+[33mW3mFrameProvider[0m 
+} [36mfrom[0m [32m'@web3
+modal/wallet'[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+createWalletClient, 
+custom, 
+[33mSwitchChainError[0m 
+} [36mfrom[0m 
+[32m'viem'[0m;
+  [90m4 |[0m 
+[36mexport[0m 
+[36mclass[0m 
+[33mEmailConnector[0m 
+[36mextends[0m 
+[33mConnector[0m {
+
+The export Connector was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/@wagmi+core@3.4.7_@tans
+tack_c40d7800df6e026b30d742
+26af2a9e73/node_modules/@wa
+gmi/core/dist/esm/exports/i
+ndex.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+connect?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/connectors/EmailConnecto
+r.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/u
+tils/defaultWagmiCoreConfig
+.js:2:1
+Export configureChains 
+doesn't exist in target 
+module
+  [90m1 |[0m 
+[36mimport[0m [32m'@web3
+modal/polyfills'[0m;
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m'@wagmi/core'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { [33mCoin
+baseWalletConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/coinbaseWal
+let'[0m;
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m'@wagm
+i/core/connectors/injected'
+[0m;
+  [90m5 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m'@wagmi/
+core/connectors/walletConne
+ct'[0m;
+
+The export configureChains 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import Conn
+ectorChainMismatchError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/utils/defaultWagmiCoreCo
+nfig.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/index.js
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/de
+ployContract.js:1:1
+Export deployContract 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+deployContract [36mas[0m 
+viem_deployContract, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/deployContract */[0m
+
+The export deployContract 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+readContract?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/deployContract.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchBalance 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchBalance 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getBalance?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchEnsAvatar 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchEnsAvatar 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getEnsAvatar?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export fetchEnsName 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export fetchEnsName 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getEnsName?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tBlobBaseFee.js:1:1
+Export getBlobBaseFee 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getBlobBaseFee [36mas[0m 
+viem_getBlobBaseFee, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getBlobBaseFee */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36mfunction[0m 
+getBlobBaseFee(config, 
+parameters = {}) {
+
+The export getBlobBaseFee 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getBlock?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getBlobBaseFee.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tCallsStatus.js:1:1
+Export getCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getCallsStatus [36mas[0m 
+viem_getCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getCallsStatus */[0m
+
+The export getCallsStatus 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getTxpoolStatus?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tCapabilities.js:1:1
+Export getCapabilities 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getCapabilities 
+[36mas[0m 
+viem_getCapabilities, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getCapabilities */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getCapabilities(config, 
+parameters = {}) {
+
+The export getCapabilities 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getFilterLogs?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getCapabilities.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tContractEvents.js:1:1
+Export getContractEvents 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getContractEvents 
+[36mas[0m 
+viem_getContractEvents, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/actions/
+getContractEvents */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getContractEvents(config, 
+parameters) {
+
+The export 
+getContractEvents was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+watchContractEvent?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getContractEvents.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export getNetwork doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export getNetwork was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/@wagmi+core@3.4.7_@tans
+tack_c40d7800df6e026b30d742
+26af2a9e73/node_modules/@wa
+gmi/core/dist/esm/exports/i
+ndex.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getFeeHistory?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/ge
+tProof.js:1:1
+Export getProof doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+getProof [36mas[0m 
+viem_getProof, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/getProof */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+getProof(config, 
+parameters) {
+
+The export getProof was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+getPermissions?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/getProof.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export mainnet doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export mainnet was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+@wagmi+core@3.4.7_@tanstack
+_c40d7800df6e026b30d74226af
+2a9e73/node_modules/@wagmi/
+core/dist/esm/exports/index
+.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+disconnect?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndCalls.js:1:1
+Export sendCalls doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendCalls [36mas[0m 
+viem_sendCalls, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendCalls */[0m
+
+The export sendCalls was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendCalls.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndCallsSync.js:1:1
+Export sendCallsSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendCallsSync [36mas[0m 
+viem_sendCallsSync, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendCallsSync */[0m
+
+The export sendCallsSync 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendCallsSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/se
+ndTransactionSync.js:1:1
+Export sendTransactionSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+sendTransactionSync 
+[36mas[0m 
+viem_sendTransactionSync } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/sendTransactionSync 
+*/[0m
+
+The export 
+sendTransactionSync was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/actions/index.j
+s [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+sendTransaction?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/sendTransactionSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/sh
+owCallsStatus.js:1:1
+Export showCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+showCallsStatus 
+[36mas[0m 
+viem_showCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/showCallsStatus */[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+showCallsStatus(config, 
+parameters) {
+
+The export showCallsStatus 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/viem@1.21.4_typescr
+ipt@6.0.3_zod@4.4.1/node_mo
+dules/viem/_esm/actions/ind
+ex.js [externals-tracing] 
+(ecmascript).
+Did you mean to import 
+call?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/showCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export switchNetwork 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export switchNetwork 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+switchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/wa
+itForCallsStatus.js:1:1
+Export waitForCallsStatus 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+waitForCallsStatus 
+[36mas[0m 
+viem_waitForCallsStatus, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getConnectorClient } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m3 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/waitForCallsStatus 
+*/[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+waitForCallsStatus(config, 
+parameters) {
+
+The export 
+waitForCallsStatus was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+waitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/waitForCallsStatus.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@web3modal+wagmi@3.5.7_@
+typ_31ba07d54ce9b48ec96afdd
+386f2ec9c/node_modules/@web
+3modal/wagmi/dist/esm/src/c
+lient.js:1:1
+Export watchNetwork 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m ...hBalance, 
+fetchEnsAvatar, 
+fetchEnsName, getAccount, 
+getNetwork, switchNetwork, 
+watchAcco...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[32mcaffold'[0m;
+  [90m3 |[0m 
+...[33ml[0m } 
+[36mfrom[0m [32m'@web3mo
+dal/scaffold-utils'[0m;
+  [90m4 |[0m 
+...[32mlpers.js'[0m;
+
+The export watchNetwork 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/@wagmi+core@3.4.7_@
+tanstack_c40d7800df6e026b30
+d74226af2a9e73/node_modules
+/@wagmi/core/dist/esm/expor
+ts/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+watchAsset?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/connectors
+/injected.js:1:1
+Export withRetry doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...oHex, [33mResourc
+eUnavailableRpcError[0m, 
+[33mSwitchChainError[0m, 
+[33mUserRejectedRequestErr
+or[0m, withRetry...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[33mrror[0m } 
+[36mfrom[0m [32m'../erro
+rs/config.js'[0m;
+  [90m3 |[0m 
+...[33mor[0m } 
+[36mfrom[0m [32m'../erro
+rs/connector.js'[0m;
+  [90m4 |[0m 
+...[36mrom[0m [32m'./cre
+ateConnector.js'[0m;
+
+The export withRetry was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/connec
+tors/injected.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/transports
+/connector.js:1:1
+Export withRetry doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m 
+...[33mnectedError[0m, 
+createTransport, 
+hexToNumber, [33mProviderD
+isconnectedError[0m, 
+withRetry, withTim...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m ...able_conn
+ector(connector, config = 
+{}) {
+  [90m3 |[0m ... 
+connector;
+  [90m4 |[0m 
+...[32monnector'[0m, 
+name = 
+[32m'Connector'[0m, 
+retryDelay } = config;
+
+The export withRetry was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/transp
+orts/connector.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/connectors
+/injected.js:1:1
+Export withTimeout doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m ...oHex, [33mResourc
+eUnavailableRpcError[0m, 
+[33mSwitchChainError[0m, 
+[33mUserRejectedRequestErr
+or[0m, withRetry...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m 
+...[33mrror[0m } 
+[36mfrom[0m [32m'../erro
+rs/config.js'[0m;
+  [90m3 |[0m 
+...[33mor[0m } 
+[36mfrom[0m [32m'../erro
+rs/connector.js'[0m;
+  [90m4 |[0m 
+...[36mrom[0m [32m'./cre
+ateConnector.js'[0m;
+
+The export withTimeout was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/connec
+tors/injected.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/transports
+/connector.js:1:1
+Export withTimeout doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m 
+...[33mnectedError[0m, 
+createTransport, 
+hexToNumber, [33mProviderD
+isconnectedError[0m, 
+withRetry, withTim...
+  [90m  |[0m    [31m[1m
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m2 |[0m ...able_conn
+ector(connector, config = 
+{}) {
+  [90m3 |[0m ... 
+connector;
+  [90m4 |[0m 
+...[32monnector'[0m, 
+name = 
+[32m'Connector'[0m, 
+retryDelay } = config;
+
+The export withTimeout was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/viem@1.21.4_typescript@
+6.0.3_zod@4.4.1/node_module
+s/viem/_esm/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+SwitchChainError?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/transp
+orts/connector.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/node_modules/.pn
+pm/@wagmi+core@3.4.7_@tanst
+ack_c40d7800df6e026b30d7422
+6af2a9e73/node_modules/@wag
+mi/core/dist/esm/actions/wr
+iteContractSync.js:1:1
+Export writeContractSync 
+doesn't exist in target 
+module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+writeContractSync 
+[36mas[0m 
+viem_writeContractSync, } 
+[36mfrom[0m 
+[32m'viem/actions'[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+getAction } [36mfrom[0m 
+[32m'../utils/getAction.js'
+[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+getConnectorClient, } 
+[36mfrom[0m [32m'./getCo
+nnectorClient.js'[0m;
+  [90m4 |[0m [90m/** htt
+ps://wagmi.sh/core/api/acti
+ons/writeContractSync 
+*/[0m
+
+The export 
+writeContractSync was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+viem@1.21.4_typescript@6.0.
+3_zod@4.4.1/node_modules/vi
+em/_esm/actions/index.js 
+[externals-tracing] 
+(ecmascript).
+Did you mean to import 
+writeContract?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import trace:
+  Browser:
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/action
+s/writeContractSync.js
+    ./frontend/node_modules
+/.pnpm/@wagmi+core@3.4.7_@t
+anstack_c40d7800df6e026b30d
+74226af2a9e73/node_modules/
+@wagmi/core/dist/esm/export
+s/index.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/s
+rc/client.js
+    ./frontend/node_modules
+/.pnpm/@web3modal+wagmi@3.5
+.7_@typ_31ba07d54ce9b48ec96
+afdd386f2ec9c/node_modules/
+@web3modal/wagmi/dist/esm/e
+xports/react.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

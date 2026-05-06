@@ -1,0 +1,68 @@
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*="language-"]):before,
+code:not([class*="language-"]):after {
+  content: "`";
+}
+code[class*="language-"] {
+  padding: 0;
+}
+.modalContent {
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: spin 3s linear infinite;
+}
+
+.wallet-connection-error-img {
+  height: 160px !important;
+  width: 160px !important;
+}
+
+.nav-header {
+  padding: 0;
+  margin-left: -5px;
+}
+
+/* .confetti {
+  width: 100% !important;
+  height: 100vh !important;
+  position: absolute;
+  z-index: 9999;
+  top: -15% !important;
+  pointer-events: none;
+  background: transparent;
+  @media (min-width: 1201px) and (max-width: 1439px) {
+    top: -40% !important;
+  }
+  @media (min-width: 1440px) and (max-width: 1659px) {
+    top: -30% !important;
+  }
+  @media (min-width: 1660px) and (max-width: 3000px) {
+    top: -30% !important;
+  }
+} */

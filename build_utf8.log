@@ -1,0 +1,2894 @@
+﻿
+> vuexy-nextjs-admin-template@1.2.0 build D:\Sahara\frontend
+> next build
+
+pnpm : ÔÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At line:1 char:1
++ pnpm build > build.log 
+2>&1
++ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (ÔÜá  
+   Warning: Ne...not be    
+ correct.:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of D:\Sahara\pack
+age-lock.json as the root 
+directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/d
+ocs/app/api-reference/confi
+g/next-config-js/turbopack#
+root-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * D:\Sahara\frontend\pnp
+m-lock.yaml
+
+Ôû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env
+- Experiments (use with caution):
+  ┬À clientTraceMetadata
+
+  Running TypeScript ...
+  Finished TypeScript in 182ms ...
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build 
+failed with 41 errors:
+./frontend/src/context/Web3
+Modal.jsx:5:1
+Module not found: Can't 
+resolve 
+'wagmi/connectors/injected'
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mWagmiConfig[0m, 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m4 |[0m 
+[36mimport[0m { bsc, 
+bscTestnet } [36mfrom[0m 
+[32m'wagmi/chains'[0m; 
+[90m// Corrected 
+import[0m
+[31m[1m>[0m [90m5 
+|[0m [36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^[0m
+  [90m6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+  [90m7 |[0m 
+[36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+  [90m8 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+
+
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/src/context/Web3
+Modal.jsx:6:1
+Module not found: Can't 
+resolve 'wagmi/connectors/w
+alletConnect'
+  [90m4 |[0m 
+[36mimport[0m { bsc, 
+bscTestnet } [36mfrom[0m 
+[32m'wagmi/chains'[0m; 
+[90m// Corrected 
+import[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+[31m[1m>[0m [90m6 
+|[0m [36mimport[0m { [3
+3mWalletConnectConnector[0
+m } [36mfrom[0m [32m"wag
+mi/connectors/walletConnect
+"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+  [90m8 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+  [90m9 |[0m 
+[36mimport[0m { 
+jsonRpcProvider } 
+[36mfrom[0m [32m'wagmi/p
+roviders/jsonRpc'[0m; 
+[90m// Import 
+jsonRpcProvider[0m
+
+
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/src/context/Web3
+Modal.jsx:9:1
+Module not found: Can't 
+resolve 
+'wagmi/providers/jsonRpc'
+  [90m 7 |[0m 
+[36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+  [90m 8 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+[31m[1m>[0m [90m 9 
+|[0m [36mimport[0m { 
+jsonRpcProvider } 
+[36mfrom[0m [32m'wagmi/p
+roviders/jsonRpc'[0m; 
+[90m// Import 
+jsonRpcProvider[0m
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+  [90m11 |[0m 
+[36mconst[0m projectId = 
+process.env.[33mNEXT_PUBLI
+C_WEB3_PROJECT_ID[0m;
+  [90m12 |[0m [90m// 
+const projectId = "88660d06
+e2cfb815df911764f617401a";
+[0m
+
+
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/src/context/Web3
+Modal.jsx:8:1
+Module not found: Can't 
+resolve 
+'wagmi/providers/public'
+  [90m 6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+  [90m 7 |[0m 
+[36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+[31m[1m>[0m [90m 8 
+|[0m [36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+jsonRpcProvider } 
+[36mfrom[0m [32m'wagmi/p
+roviders/jsonRpc'[0m; 
+[90m// Import 
+jsonRpcProvider[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+  [90m11 |[0m 
+[36mconst[0m projectId = 
+process.env.[33mNEXT_PUBLI
+C_WEB3_PROJECT_ID[0m;
+
+
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./frontend/src/context/Web3
+Modal.jsx:7:1
+Export EIP6963Connector 
+doesn't exist in target 
+module
+  [90m 5 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+  [90m 6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { 
+jsonRpcProvider } 
+[36mfrom[0m [32m'wagmi/p
+roviders/jsonRpc'[0m; 
+[90m// Import 
+jsonRpcProvider[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+
+The export 
+EIP6963Connector was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+@web3modal+wagmi@5.1.11_@ty
+_90def13fa61fafea16ea648e20
+8c8efb/node_modules/@web3mo
+dal/wagmi/dist/esm/exports/
+index.js [client] 
+(ecmascript).
+Did you mean to import 
+authConnector?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/src/context/Web3
+Modal.jsx:3:1
+Export WagmiConfig doesn't 
+exist in target module
+  [90m1 |[0m [90m// ** 
+Web3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+createWeb3Modal, 
+defaultWagmiConfig } 
+[36mfrom[0m [32m"@web3mo
+dal/wagmi/react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+[33mWagmiConfig[0m, 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { bsc, 
+bscTestnet } [36mfrom[0m 
+[32m'wagmi/chains'[0m; 
+[90m// Corrected 
+import[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+  [90m6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+
+The export WagmiConfig was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import 
+WagmiContext?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/src/context/Web3
+Modal.jsx:3:1
+Export configureChains 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+Web3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+createWeb3Modal, 
+defaultWagmiConfig } 
+[36mfrom[0m [32m"@web3mo
+dal/wagmi/react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+[33mWagmiConfig[0m, 
+configureChains, 
+createConfig } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { bsc, 
+bscTestnet } [36mfrom[0m 
+[32m'wagmi/chains'[0m; 
+[90m// Corrected 
+import[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+  [90m6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+
+The export configureChains 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useChains?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+./frontend/src/hooks/useCon
+tractRegister.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m 
+[36mexport[0m 
+[36mconst[0m 
+useContractRegister = 
+(address) => {
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractRegister.js
+    ./frontend/src/pages/da
+shboards/analytics/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractRegister.js
+    ./frontend/src/pages/da
+shboards/analytics/index.js
+
+
+./frontend/src/hooks/useCon
+tractStake.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m 1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m 2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m 3 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   useContractRead,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m10 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useGet
+CurrentPrice.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetCurrentPrice.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetCurrentPrice.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useGet
+KGCLiveTokens.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetKGCLiveTokens.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetKGCLiveTokens.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+
+./frontend/src/hooks/useGet
+MinWithdrawalAmountInKgc.js
+:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m 
+[36mimport[0m { 
+formatNumber, 
+toFixedDecimal } 
+[36mfrom[0m [32m"src/con
+stants/common"[0m;
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetMinWithdrawalAmountInKg
+c.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetMinWithdrawalAmountInKg
+c.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+
+./frontend/src/hooks/useGet
+RegisterUSDCTokens.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetRegisterUSDCTokens.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetRegisterUSDCTokens.js
+    ./frontend/src/pages/si
+gnup/index.js
+
+
+./frontend/src/hooks/useGet
+USDCTokens.js:2:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m5 |[0m
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetUSDCTokens.js
+    ./frontend/src/pages/bo
+nus/rank-status/rank-card/i
+ndex.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetUSDCTokens.js
+    ./frontend/src/pages/bo
+nus/rank-status/rank-card/i
+ndex.js
+
+
+./frontend/src/hooks/useGet
+USDTAmount.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m 
+[36mimport[0m { 
+formatNumber, 
+toFixedDecimal } 
+[36mfrom[0m [32m"src/con
+stants/common"[0m;
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eGetUSDTAmount.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eGetUSDTAmount.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useRea
+dSakeLimitInUSDC.js:3:1
+Export useContractRead 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useContractRead } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m4 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m6 |[0m 
+[36mimport[0m { 
+formatNumber, 
+toFixedDecimal } 
+[36mfrom[0m [32m"src/con
+stants/common"[0m;
+
+The export useContractRead 
+was not found in module [pr
+oject]/frontend/node_module
+s/.pnpm/wagmi@3.6.8_@tansta
+ck+query_3af401511f57a913f6
+4fffc05a65e9f0/node_modules
+/wagmi/dist/esm/exports/ind
+ex.js [client] 
+(ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eReadSakeLimitInUSDC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eReadSakeLimitInUSDC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useApp
+roveKGCTokens.js:2:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m"react"[0m;
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eApproveKGCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eApproveKGCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useApp
+roveUSDCTokens.js:2:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m"react"[0m;
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eApproveUSDCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eApproveUSDCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useBuy
+FundsKGC.js:2:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useBuyFundsKGC = () => {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eBuyFundsKGC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eBuyFundsKGC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useCon
+tractFundTransfer.js:3:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m 1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m 2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m 3 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   useContractRead,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m10 |[0m
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractFundTransfer.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractFundTransfer.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+
+./frontend/src/hooks/useCon
+tractStake.js:3:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m 1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m 2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m 3 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   useContractRead,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m10 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useCon
+tractWithdrawal.js:2:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useContractWithdrawal = () 
+=> {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractWithdrawal.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractWithdrawal.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+
+./frontend/src/hooks/useSel
+lFundsKGC.js:2:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useSellFundsKGC = () => {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eSellFundsKGC.js
+    ./frontend/src/pages/se
+ll-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eSellFundsKGC.js
+    ./frontend/src/pages/se
+ll-funds/index.js
+
+
+./frontend/src/pages/signup
+/index.js:28:1
+Export useContractWrite 
+doesn't exist in target 
+module
+  [90m26 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m27 |[0m 
+[36mimport[0m { 
+useWeb3Modal } 
+[36mfrom[0m [32m"@web3mo
+dal/wagmi/react"[0m;
+[31m[1m>[0m [90m28 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m29 
+|[0m   useAccount,
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m30 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m31 
+|[0m   useDisconnect,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m32 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m33 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m34 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m35 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m36 |[0m 
+[36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+
+The export 
+useContractWrite was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useContractEvents?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/hooks/useVal
+idateAccount.js:1:1
+Export useNetwork doesn't 
+exist in target module
+[31m[1m>[0m [90m1 
+|[0m [36mimport[0m { 
+useAccount, 
+useChainId,useNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m2 |[0m 
+[36mimport[0m { 
+useSelector } 
+[36mfrom[0m 
+[32m"react-redux"[0m;
+  [90m3 |[0m 
+[36mimport[0m { 
+useEffect, useState } 
+[36mfrom[0m 
+[32m"react"[0m;
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+
+The export useNetwork was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import 
+useFeeHistory?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eValidateAccount.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eValidateAccount.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/pages/buy-fu
+nds/index.js:31:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m29 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m30 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+[31m[1m>[0m [90m31 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m32 |[0m
+  [90m33 |[0m [90m// ** 
+socket Imports[0m
+  [90m34 |[0m 
+[36mimport[0m 
+[33mSocketContext[0m 
+[36mfrom[0m [32m"src/con
+text/Socket"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/fund-t
+ransfer/index.js:30:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m28 |[0m 
+[36mimport[0m 
+useGetUSDCTokens 
+[36mfrom[0m [32m"src/hoo
+ks/useGetUSDCTokens"[0m;
+  [90m29 |[0m 
+[36mimport[0m 
+useValidateAccount 
+[36mfrom[0m [32m"src/hoo
+ks/useValidateAccount"[0m;
+[31m[1m>[0m [90m30 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m31 |[0m 
+[36mimport[0m { 
+createTxLog } 
+[36mfrom[0m [32m"src/sto
+re/apps/transaction/transac
+tionLogsSlice"[0m;
+  [90m32 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+  [90m33 |[0m 
+[36mimport[0m { 
+truncateDecimals } 
+[36mfrom[0m [32m"src/con
+stants/common"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/login/
+index.js:21:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m19 |[0m 
+[36mimport[0m { 
+useWeb3Modal } 
+[36mfrom[0m [32m"@web3mo
+dal/wagmi/react"[0m;
+  [90m20 |[0m 
+[36mimport[0m { 
+useAccount, useDisconnect 
+} [36mfrom[0m 
+[32m"wagmi"[0m;
+[31m[1m>[0m [90m21 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m22 |[0m 
+[36mimport[0m 
+useValidateAccount 
+[36mfrom[0m [32m"src/hoo
+ks/useValidateAccount"[0m;
+  [90m23 |[0m
+  [90m24 |[0m [90m// ** 
+Custom Component Import[0m
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/sell-f
+unds/index.js:36:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m34 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m35 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+[31m[1m>[0m [90m36 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m37 |[0m
+  [90m38 |[0m [90m// ** 
+socket Imports[0m
+  [90m39 |[0m 
+[36mimport[0m 
+[33mSocketContext[0m 
+[36mfrom[0m [32m"src/con
+text/Socket"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/signup
+/index.js:36:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m34 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m35 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+[31m[1m>[0m [90m36 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m37 |[0m 
+[36mimport[0m 
+useValidateAccount 
+[36mfrom[0m [32m"src/hoo
+ks/useValidateAccount"[0m;
+  [90m38 |[0m [90m// ** 
+Icon Imports[0m
+  [90m39 |[0m 
+[36mimport[0m 
+[33mIcon[0m 
+[36mfrom[0m [32m"src/@co
+re/components/icon"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/stake/
+index.js:32:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m30 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m31 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+[31m[1m>[0m [90m32 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m33 |[0m
+  [90m34 |[0m [90m// ** 
+socket Imports[0m
+  [90m35 |[0m 
+[36mimport[0m 
+[33mSocketContext[0m 
+[36mfrom[0m [32m"src/con
+text/Socket"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/pages/withdr
+awal/index.js:31:1
+Export useSwitchNetwork 
+doesn't exist in target 
+module
+  [90m29 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m30 |[0m 
+[36mimport[0m 
+useGetKGCLiveTokens 
+[36mfrom[0m [32m"src/hoo
+ks/useGetKGCLiveTokens"[0m
+;
+[31m[1m>[0m [90m31 
+|[0m [36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^[0m
+  [90m32 |[0m 
+[36mimport[0m 
+useValidateAccount 
+[36mfrom[0m [32m"src/hoo
+ks/useValidateAccount"[0m;
+  [90m33 |[0m [90m// ** 
+socket Imports[0m
+  [90m34 |[0m 
+[36mimport[0m 
+[33mSocketContext[0m 
+[36mfrom[0m [32m"src/con
+text/Socket"[0m;
+
+The export 
+useSwitchNetwork was not 
+found in module [project]/f
+rontend/node_modules/.pnpm/
+wagmi@3.6.8_@tanstack+query
+_3af401511f57a913f64fffc05a
+65e9f0/node_modules/wagmi/d
+ist/esm/exports/index.js 
+[client] (ecmascript).
+Did you mean to import 
+useSwitchConnection?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/hooks/useApp
+roveKGCTokens.js:2:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m"react"[0m;
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eApproveKGCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eApproveKGCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useApp
+roveUSDCTokens.js:2:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m"react"[0m;
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eApproveUSDCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eApproveUSDCTokens.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useBuy
+FundsKGC.js:2:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useBuyFundsKGC = () => {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eBuyFundsKGC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eBuyFundsKGC.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useCon
+tractFundTransfer.js:3:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m 1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m 2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m 3 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   useContractRead,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+  [90m10 |[0m
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractFundTransfer.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractFundTransfer.js
+    ./frontend/src/pages/fu
+nd-transfer/index.js
+
+
+./frontend/src/hooks/useCon
+tractStake.js:3:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m 1 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m 2 |[0m 
+[36mimport[0m { 
+useState, useEffect } 
+[36mfrom[0m 
+[32m"react"[0m;
+[31m[1m>[0m [90m 3 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m 4 
+|[0m   useContractRead,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 5 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 6 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m 7 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m10 |[0m 
+[36mimport[0m { toast } 
+[36mfrom[0m 
+[32m"react-hot-toast"[0m;
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractStake.js
+    ./frontend/src/pages/bu
+y-funds/index.js
+
+
+./frontend/src/hooks/useCon
+tractWithdrawal.js:2:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useContractWithdrawal = () 
+=> {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eContractWithdrawal.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eContractWithdrawal.js
+    ./frontend/src/pages/wi
+thdrawal/index.js
+
+
+./frontend/src/hooks/useSel
+lFundsKGC.js:2:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m1 |[0m [90m// ** 
+WEB3 Imports[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+useContractWrite, 
+useWaitForTransaction } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m  |[0m [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m4 |[0m 
+[36mconst[0m 
+useSellFundsKGC = () => {
+  [90m5 |[0m   
+[90m//approve contract[0m
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/hooks/us
+eSellFundsKGC.js
+    ./frontend/src/pages/se
+ll-funds/index.js
+
+  SSR:
+    ./frontend/src/hooks/us
+eSellFundsKGC.js
+    ./frontend/src/pages/se
+ll-funds/index.js
+
+
+./frontend/src/pages/signup
+/index.js:28:1
+Export 
+useWaitForTransaction 
+doesn't exist in target 
+module
+  [90m26 |[0m [90m// ** 
+WEB3 Imports[0m
+  [90m27 |[0m 
+[36mimport[0m { 
+useWeb3Modal } 
+[36mfrom[0m [32m"@web3mo
+dal/wagmi/react"[0m;
+[31m[1m>[0m [90m28 
+|[0m [36mimport[0m {
+  [90m   |[0m 
+[31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m29 
+|[0m   useAccount,
+  [90m   |[0m 
+[31m[1m^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m30 
+|[0m   useContractWrite,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m31 
+|[0m   useDisconnect,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m32 
+|[0m   
+useWaitForTransaction,
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m33 
+|[0m } [36mfrom[0m 
+[32m"wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^[0m
+  [90m34 |[0m 
+[36mimport[0m { ethers } 
+[36mfrom[0m 
+[32m"ethers"[0m;
+  [90m35 |[0m 
+[36mimport[0m { 
+[33mCONTRACT_INFO[0m } 
+[36mfrom[0m 
+[32m"src/contract"[0m;
+  [90m36 |[0m 
+[36mimport[0m { 
+useSwitchNetwork } 
+[36mfrom[0m 
+[32m"wagmi"[0m;
+
+The export 
+useWaitForTransaction was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/wagmi@3.6.8_@tanstack+q
+uery_3af401511f57a913f64fff
+c05a65e9f0/node_modules/wag
+mi/dist/esm/exports/index.j
+s [client] (ecmascript).
+Did you mean to import useW
+aitForTransactionReceipt?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+
+./frontend/src/context/Web3
+Modal.jsx:7:1
+Export 
+walletConnectProvider 
+doesn't exist in target 
+module
+  [90m 5 |[0m 
+[36mimport[0m { 
+[33mInjectedConnector[0m 
+} [36mfrom[0m [32m"wagmi
+/connectors/injected"[0m;
+  [90m 6 |[0m 
+[36mimport[0m { [33mWall
+etConnectConnector[0m } 
+[36mfrom[0m [32m"wagmi/c
+onnectors/walletConnect"[0
+m;
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+walletConnectProvider, 
+[33mEIP6963Connector[0m 
+} [36mfrom[0m [32m"@web3
+modal/wagmi"[0m;
+  [90m   |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+publicProvider } 
+[36mfrom[0m [32m"wagmi/p
+roviders/public"[0m;
+  [90m 9 |[0m 
+[36mimport[0m { 
+jsonRpcProvider } 
+[36mfrom[0m [32m'wagmi/p
+roviders/jsonRpc'[0m; 
+[90m// Import 
+jsonRpcProvider[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mENV[0m } 
+[36mfrom[0m 
+[32m"src/configs/env"[0m;
+
+The export 
+walletConnectProvider was 
+not found in module [projec
+t]/frontend/node_modules/.p
+npm/@web3modal+wagmi@5.1.11
+_@ty_90def13fa61fafea16ea64
+8e208c8efb/node_modules/@we
+b3modal/wagmi/dist/esm/expo
+rts/index.js [client] 
+(ecmascript).
+Did you mean to import 
+authConnector?
+All exports of the module 
+are statically known (It 
+doesn't have dynamic 
+exports). So it's known 
+statically that the 
+requested export doesn't 
+exist.
+
+Import traces:
+  Browser:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+  SSR:
+    ./frontend/src/context/
+Web3Modal.jsx
+    ./frontend/src/pages/_a
+pp.js
+
+
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:5:1)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:6:1)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:9:1)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:8:1)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:7:1)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:3:1)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractRegi
+ster.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractStak
+e.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetCurrentPr
+ice.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetKGCLiveTo
+kens.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetMinWithdr
+awalAmountInKgc.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetRegisterU
+SDCTokens.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetUSDCToken
+s.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useGetUSDTAmoun
+t.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useReadSakeLimi
+tInUSDC.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useApproveKGCTo
+kens.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useApproveUSDCT
+okens.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useBuyFundsKGC.
+js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractFund
+Transfer.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractStak
+e.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractWith
+drawal.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useSellFundsKGC
+.js:2:1)
+    at <unknown> (./fronten
+d/src/pages/signup/index.js
+:28:1)
+    at <unknown> (./fronten
+d/src/hooks/useValidateAcco
+unt.js:1:1)
+    at <unknown> (./fronten
+d/src/pages/buy-funds/index
+.js:31:1)
+    at <unknown> (./fronten
+d/src/pages/fund-transfer/i
+ndex.js:30:1)
+    at <unknown> (./fronten
+d/src/pages/login/index.js:
+21:1)
+    at <unknown> (./fronten
+d/src/pages/sell-funds/inde
+x.js:36:1)
+    at <unknown> (./fronten
+d/src/pages/signup/index.js
+:36:1)
+    at <unknown> (./fronten
+d/src/pages/stake/index.js:
+32:1)
+    at <unknown> (./fronten
+d/src/pages/withdrawal/inde
+x.js:31:1)
+    at <unknown> (./fronten
+d/src/hooks/useApproveKGCTo
+kens.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useApproveUSDCT
+okens.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useBuyFundsKGC.
+js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractFund
+Transfer.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractStak
+e.js:3:1)
+    at <unknown> (./fronten
+d/src/hooks/useContractWith
+drawal.js:2:1)
+    at <unknown> (./fronten
+d/src/hooks/useSellFundsKGC
+.js:2:1)
+    at <unknown> (./fronten
+d/src/pages/signup/index.js
+:28:1)
+    at <unknown> (./fronten
+d/src/context/Web3Modal.jsx
+:7:1)
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

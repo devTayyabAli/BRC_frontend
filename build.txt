@@ -1,0 +1,13 @@
+﻿
+> vuexy-nextjs-admin-template@1.2.0 build D:\Sahara\frontend
+> next build
+
+Ôû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env
+- Experiments (use with caution):
+  ┬À clientTraceMetadata
+
+  Running TypeScript ...
+  Finished TypeScript in 115ms ...
+  Creating an optimized production build ...
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.
