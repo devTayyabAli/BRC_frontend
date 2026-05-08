@@ -22,6 +22,7 @@ import "src/configs/i18n";
 import { defaultACLObj } from "src/configs/acl";
 import themeConfig from "src/configs/themeConfig";
 import Confetti from "react-confetti";
+import { AnimatePresence, motion } from "framer-motion";
 
 // ** Fake-DB Import
 import "src/@fake-db";
@@ -251,6 +252,40 @@ const App = (props) => {
 
   return (
     <>
+      {/* Background Glowing Orbs for Glassmorphism UI */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: "-10%",
+          right: "-5%",
+          width: "40vw",
+          height: "40vw",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(201,168,76,0.15) 0%, rgba(0,0,0,0) 70%)",
+          filter: "blur(100px)",
+          zIndex: -1,
+          // animation: "pulseOrbs 10s infinite alternate ease-in-out",
+          // "@keyframes pulseOrbs": {
+          //   "0%": { transform: "scale(1)", opacity: 0.8 },
+          //   "100%": { transform: "scale(1.2)", opacity: 1 }
+          // }
+        }}
+      />
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: "-10%",
+          left: "-5%",
+          width: "50vw",
+          height: "50vw",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(212,175,55,0.1) 0%, rgba(0,0,0,0) 70%)",
+          filter: "blur(120px)",
+          zIndex: -1,
+          // animation: "pulseOrbs 15s infinite alternate-reverse ease-in-out"
+        }}
+      />
+
       <Web3Modal>
         <SocketContext.Provider value={socket}>
           <Provider store={store}>
@@ -284,7 +319,9 @@ const App = (props) => {
                               guestGuard={guestGuard}
                               authGuard={authGuard}
                             >
+
                               {getLayout(<Component {...pageProps} />)}
+
                             </AclGuard>
                           </Guard>
                           <ReactHotToast>

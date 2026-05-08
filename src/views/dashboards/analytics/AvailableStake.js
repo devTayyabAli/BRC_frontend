@@ -11,6 +11,7 @@ import CardActions from "@mui/material/CardActions";
 
 // ** Custom Component Import
 import CustomTextField from "src/@core/components/mui/text-field";
+import { Skeleton } from "@mui/material";
 import { useContractRegister } from "src/hooks/useContractRegister";
 import { useAccount } from "wagmi";
 import { useSelector } from "react-redux";
@@ -61,9 +62,11 @@ const AvailableStake = () => {
                       color: "",
                       fontWeight: 600,
                       fontSize: 20,
+                      display: 'flex',
+                      alignItems: 'center'
                     }}
                   >
-                    {user?.totalStakeAmount || 0}
+                    {user?.totalStakeAmount === undefined ? <Skeleton variant="text" width={80} animation="wave" /> : (user?.totalStakeAmount || 0)}
                   </Typography>
                 </Box>
               </Box>
@@ -99,7 +102,7 @@ const AvailableStake = () => {
                     fontSize: 20,
                   }}
                 >
-                  {formatNumber(availableKGC, toFixedDecimal) || 0}
+                  {availableKGC === undefined ? <Skeleton variant="text" width={100} animation="wave" /> : (formatNumber(availableKGC, toFixedDecimal) || 0)}
                 </Typography>
               </Box>
             </Box>
@@ -116,12 +119,12 @@ const AvailableStake = () => {
                 mr: 2,
                 mb: 4,
                 py: 3,
-                background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(255, 215, 0, 0.2) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #ea5455 50%)',
+                background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(201, 168, 76, 0.2) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #C9A84C 50%)',
                 border: "1px solid #fff",
                 borderRadius: "20px",
 
                 "&:hover": {
-                  backgroundColor: "#1d439e",
+                  background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(201, 168, 76, 0.4) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #D4AF37 50%)',
                 },
               }}
               variant="contained"

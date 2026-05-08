@@ -4,6 +4,11 @@ const Card = skin => {
       styleOverrides: {
         root: ({ theme }) => ({
           ...(skin === 'bordered' && { border: `1px solid ${theme.palette.divider}` }),
+          backdropFilter: 'blur(12px)',
+          backgroundColor: theme.palette.mode === 'light' ? 'rgba(255, 255, 255, 0.75)' : 'rgba(47, 51, 73, 0.75)',
+          backgroundImage: 'none',
+          boxShadow: theme.palette.mode === 'dark' ? '0 8px 32px 0 rgba(0, 0, 0, 0.36)' : '0 8px 32px 0 rgba(31, 38, 135, 0.05)',
+          border: `1px solid ${theme.palette.mode === 'light' ? 'rgba(255, 255, 255, 0.3)' : 'rgba(255, 255, 255, 0.1)'}`,
           '& .card-more-options': {
             marginTop: theme.spacing(-1),
             marginRight: theme.spacing(-3)

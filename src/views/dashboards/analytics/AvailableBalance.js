@@ -10,7 +10,7 @@ import useGetUSDCTokens from "src/hooks/useGetUSDCTokens";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { useSettings } from "src/@core/hooks/useSettings";
-import { Typography } from "@mui/material";
+import { Typography, Skeleton } from "@mui/material";
 
 const AvailableBalance = () => {
   // ** Hook
@@ -32,7 +32,9 @@ const AvailableBalance = () => {
       <CardHeader sx={{ pb: 0 }} title="Available Bonus Balance" />
 
       <CardContent>
-        <Box sx={{ color: "", fontSize: 26, fontWeight: 700 }}>${availableBonusBalance}</Box>
+        <Box sx={{ color: "", fontSize: 26, fontWeight: 700 }}>
+           {availableBonusBalance === undefined ? <Skeleton variant="text" width={120} animation="wave" /> : `$${availableBonusBalance}`}
+        </Box>
         <Box
           sx={{
             mt: 6,
@@ -47,12 +49,12 @@ const AvailableBalance = () => {
               mr: 2,
               mb: 4,
               py: 4,
-              background: '#DAA520',
+              background: '#C9A84C',
               border: "1px solid #fff",
               borderRadius:"20px",
 
               "&:hover": {
-                backgroundColor: "#DAA520",
+                backgroundColor: "#D4AF37",
               },
             }}
             variant="contained"
@@ -90,12 +92,12 @@ const AvailableBalance = () => {
               mr: 2,
               mb: 4,
               py: 4,
-              background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(255, 215, 0, 0.2) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #ea5455 50%)',
+              background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(201, 168, 76, 0.2) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #C9A84C 50%)',
               border: "1px solid #fff",
               borderRadius:"20px",
 
               "&:hover": {
-                backgroundColor: "#1d439e",
+                background: settings?.mode == "dark" ? 'linear-gradient(135deg, transparent 20%, rgba(201, 168, 76, 0.4) 50%)' : 'linear-gradient(135deg, rgba(16, 16, 16, 0.8) 20%, #D4AF37 50%)',
               },
             }}
             variant="contained"
@@ -110,12 +112,12 @@ const AvailableBalance = () => {
                 mr: 2,
                 mb: 4,
                 py: 3,
-                background: settings?.mode == "dark" ? 'linear-gradient(135deg, rgba(255, 215, 0, 0.2) 20%, transparent 50%)' : 'linear-gradient(135deg, #ea5455 20%, rgba(16, 16, 16, 0.8) 50%)',
+                background: settings?.mode == "dark" ? 'linear-gradient(135deg, rgba(201, 168, 76, 0.2) 20%, transparent 50%)' : 'linear-gradient(135deg, #C9A84C 20%, rgba(16, 16, 16, 0.8) 50%)',
                 border: "1px solid #fff",
                 borderRadius: "20px",
 
                 "&:hover": {
-                  backgroundColor: "#1d439e",
+                  background: settings?.mode == "dark" ? 'linear-gradient(135deg, rgba(201, 168, 76, 0.4) 20%, transparent 50%)' : 'linear-gradient(135deg, #D4AF37 20%, rgba(16, 16, 16, 0.8) 50%)',
                 },
               }}
               variant="contained"

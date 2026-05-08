@@ -24,6 +24,22 @@ import { completeStack } from "src/store/apps/transaction/completeTransactionEve
 import { createTxLog } from "src/store/apps/transaction/transactionLogsSlice";
 
 import { toast } from "react-hot-toast";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+
+function AnimatedCounter({ from, to }) {
+  const count = useMotionValue(from);
+  const rounded = useTransform(count, (latest) => {
+    const num = Math.round(latest * 10) / 10;
+    return (num % 1 === 0 ? num + ".0" : num) + "% Monthly";
+  });
+
+  useEffect(() => {
+    const controls = animate(count, to, { duration: 2.5, ease: "easeOut" });
+    return controls.stop;
+  }, []);
+
+  return <motion.span>{rounded}</motion.span>;
+}
 
 //web3
 import useContractStake from "../../hooks/useContractStake";
@@ -236,10 +252,10 @@ const Stake = () => {
   }, [socket, userId]);
 
   return (
-    <Card sx={{ p: 8 }}>
+    <Card sx={{ p: { xs: 3, md: 8 } }}>
       <Card sx={{ border: 1 }}>
         <CardHeader
-          sx={{ textAlign: "center", py: 8, fontSize: 30 }}
+          sx={{ textAlign: "center", py: { xs: 4, md: 8 }, fontSize: { xs: 24, md: 30 } }}
           title={
             contribution === true
               ? "Stake BRC"
@@ -523,9 +539,9 @@ const Stake = () => {
                 </Typography>
                 <Typography
                   variant="span"
-                  sx={{ px: 2, color: "#7367f0", fontWeight: 600 }}
+                  sx={{ px: 2, color: "#C9A84C", fontWeight: 600 }}
                 >
-                  12.0% Monthly
+                  <AnimatedCounter from={0} to={12} />
                 </Typography>
               </Typography>
               <Typography
@@ -546,40 +562,65 @@ const Stake = () => {
           </CardContent>
           <Divider sx={{ m: "0 !important" }} />
           <CardActions>
-            <Button
-              fullWidth
-              type="submit"
-              sx={{ mr: 2 }}
-              variant="contained"
-              disabled={
-                isApprovekgcTxInProgress ||
-                isApprovalTokensWaiting ||
-                isStakekgcSentTxInProgress ||
-                isStakekgcTxInProgress ||
-                !stakeAmount ||
-                error ||
-                accError||minMaxError
-                // ||
-                // chainError
+            <motion.div
+              style={{ width: "100%", display: "flex", justifyContent: "center" }}
+              animate={
+                !(
+                  isApprovekgcTxInProgress ||
+                  isApprovalTokensWaiting ||
+                  isStakekgcSentTxInProgress ||
+                  isStakekgcTxInProgress ||
+                  !stakeAmount ||
+                  error ||
+                  accError ||
+                  minMaxError
+                )
+                  ? {
+                      scale: [1, 1.02, 1],
+                      boxShadow: [
+                        "0px 0px 0px rgba(201,168,76,0)",
+                        "0px 0px 15px rgba(201,168,76,0.5)",
+                        "0px 0px 0px rgba(201,168,76,0)",
+                      ],
+                    }
+                  : {}
               }
-              onClick={handleSubmit}
+              transition={{ duration: 1.5, repeat: Infinity }}
             >
-              {accError
-                ? `Please connect with ${
-                    user?.data?.walletAddress?.slice(0, 6) +
-                    "..." +
-                    user?.data?.walletAddress?.slice(-6)
-                  } wallet address `
-                : isApprovekgcTxInProgress
-                ? "Approve Transaction"
-                : isApprovalTokensWaiting
-                ? "Approving Tokens"
-                : isStakekgcSentTxInProgress
-                ? "Approving Transaction"
-                : isStakekgcTxInProgress
-                ? "Transaction is in Progress, Please wait!"
-                : "Activate Now"}
-            </Button>
+              <Button
+                fullWidth
+                type="submit"
+                sx={{ mr: 2 }}
+                variant="contained"
+                disabled={
+                  isApprovekgcTxInProgress ||
+                  isApprovalTokensWaiting ||
+                  isStakekgcSentTxInProgress ||
+                  isStakekgcTxInProgress ||
+                  !stakeAmount ||
+                  error ||
+                  accError ||
+                  minMaxError
+                }
+                onClick={handleSubmit}
+              >
+                {accError
+                  ? `Please connect with ${
+                      user?.data?.walletAddress?.slice(0, 6) +
+                      "..." +
+                      user?.data?.walletAddress?.slice(-6)
+                    } wallet address `
+                  : isApprovekgcTxInProgress
+                  ? "Approve Transaction"
+                  : isApprovalTokensWaiting
+                  ? "Approving Tokens"
+                  : isStakekgcSentTxInProgress
+                  ? "Approving Transaction"
+                  : isStakekgcTxInProgress
+                  ? "Transaction is in Progress, Please wait!"
+                  : "Activate Now"}
+              </Button>
+            </motion.div>
           </CardActions>
         </form>
       </Card>
