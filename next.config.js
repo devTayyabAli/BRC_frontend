@@ -9,12 +9,10 @@ module.exports = {
   trailingSlash: true,
   reactStrictMode: false,
   // Configure Turbopack alias resolution
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        'apexcharts': path.resolve(__dirname, './node_modules/apexcharts-clevision'),
-        'apexcharts/client': path.resolve(__dirname, './node_modules/apexcharts-clevision/dist/apexcharts.common.js'),
-      },
+  turbo: {
+    resolveAlias: {
+      'apexcharts': path.resolve(__dirname, './node_modules/apexcharts-clevision'),
+      'apexcharts/client': path.resolve(__dirname, './node_modules/apexcharts-clevision/dist/apexcharts.common.js'),
     },
   },
   webpack: config => {
