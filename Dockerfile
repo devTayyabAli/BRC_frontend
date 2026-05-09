@@ -8,6 +8,10 @@ RUN npm install
 
 COPY . .
 
+RUN sed -i "s|from['\"]\s*['\"]apexcharts/client['\"]|from 'apexcharts'|g" node_modules/react-apexcharts/dist/react-apexcharts.esm.js || \
+    sed -i 's|from "apexcharts/client"|from "apexcharts"|g' node_modules/react-apexcharts/dist/react-apexcharts.esm.js || \
+    sed -i "s|from 'apexcharts/client'|from 'apexcharts'|g" node_modules/react-apexcharts/dist/react-apexcharts.esm.js
+
 RUN npm run build
 
 EXPOSE 3000
