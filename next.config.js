@@ -11,7 +11,9 @@ module.exports = {
   webpack: config => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      apexcharts: path.resolve(__dirname, './node_modules/apexcharts-clevision')
+      // Handle both the main package and the /client subpath
+      'apexcharts': path.resolve(__dirname, './node_modules/apexcharts-clevision'),
+      'apexcharts/client': path.resolve(__dirname, './node_modules/apexcharts-clevision/dist/apexcharts.common.js'),
     }
 
     return config
