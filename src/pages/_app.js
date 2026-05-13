@@ -167,6 +167,7 @@ const App = (props) => {
     setShowRankDescription("");
   };
 
+  
   useEffect(() => {
     if (!socket) {
       const connectedSocket = Socket.connectSocket();
