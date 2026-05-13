@@ -166,20 +166,46 @@ const LoginPage = () => {
         ? "Logo-signup"
         : "Logo-signup";
 
-  const backgroundImageUrl = "BG-new-kgc";
-   useEffect(() => {
-      const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
-      if (router && !excludedPaths.includes(router.pathname)) {
-        if (isMobile() && !window?.ethereum) {
-          router.push("/wallet-connection-error-guest");
-        }
+  // const backgroundImageUrl = "BG-new-kgc";
+  const backgroundImageUrl = "logInPic";
+
+  useEffect(() => {
+    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
+    if (router && !excludedPaths.includes(router.pathname)) {
+      if (isMobile() && !window?.ethereum) {
+        router.push("/wallet-connection-error-guest");
       }
-    }, []);
+    }
+  }, []);
   return (
     <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
       <Form>
         <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
           {!hidden ? (
+            <Box
+              sx={{
+                flex: 1,
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                borderRadius: "20px",
+                justifyContent: "center",
+                // backgroundColor: "customColors.bodyBg",
+                backgroundImage: `url(/images/pages/${backgroundImageUrl}.jpeg)`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                margin: () => spacing(8, 0, 8, 8),
+              }}
+            >
+              {/* <LoginIllustration
+                alt="login-illustration"
+                src={`/images/pages/${imageSource}.png`}
+              />
+              <FooterIllustrationsV2 /> */}
+            </Box>
+          ) : null}
+          {/* {!hidden ? (
             <Box
               sx={{
                 flex: 1,
@@ -202,7 +228,7 @@ const LoginPage = () => {
               />
               <FooterIllustrationsV2 />
             </Box>
-          ) : null}
+          ) : null} */}
           <RightWrapper>
             <Box
               sx={{
@@ -294,28 +320,28 @@ const LoginPage = () => {
 
                   </Box>
                   <Button
-                      fullWidth
-                      type="button"
-                      variant="contained"
-                      sx={{ mb: spacing(4) }}
-                      onClick={() => disconnect()}
-                    >
-                      Disconnect Wallet
-                    </Button>
+                    fullWidth
+                    type="button"
+                    variant="contained"
+                    sx={{ mb: spacing(4) }}
+                    onClick={() => disconnect()}
+                  >
+                    Disconnect Wallet
+                  </Button>
                 </>
-                 : (
-                  <>
-                    <Button
-                      fullWidth
-                      type="button"
-                      variant="contained"
-                      sx={{ mb: spacing(4) }}
-                      onClick={() => open({ view: "Networks" })}
-                    >
-                      Connect Wallet
-                    </Button>
-                  </>
-                )}
+                  : (
+                    <>
+                      <Button
+                        fullWidth
+                        type="button"
+                        variant="contained"
+                        sx={{ mb: spacing(4) }}
+                        onClick={() => open({ view: "Networks" })}
+                      >
+                        Connect Wallet
+                      </Button>
+                    </>
+                  )}
                 <Box
                   sx={{
                     mb: spacing(1.75),

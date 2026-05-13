@@ -492,15 +492,15 @@ const Register = () => {
     };
   }, []);
 
-  const backgroundImageUrl = "BG-new-kgc";
-   useEffect(() => {
-      const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
-      if (router && !excludedPaths.includes(router.pathname)) {
-        if (isMobile() && !window?.ethereum) {
-          router.push("/wallet-connection-error-guest");
-        }
+  const backgroundImageUrl = "logInPic";
+  useEffect(() => {
+    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
+    if (router && !excludedPaths.includes(router.pathname)) {
+      if (isMobile() && !window?.ethereum) {
+        router.push("/wallet-connection-error-guest");
       }
-    }, []);
+    }
+  }, []);
   return (
     <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
       {!hidden ? (
@@ -513,20 +513,20 @@ const Register = () => {
             borderRadius: "20px",
             justifyContent: "center",
             // backgroundColor: "customColors.bodyBg",
-            backgroundImage: `url(/images/pages/${backgroundImageUrl}.jpg)`,
+            backgroundImage: `url(/images/pages/${backgroundImageUrl}.jpeg)`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "cover",
-            margin: (theme) => theme.spacing(8, 0, 8, 8),
+            backgroundSize: "contain",
+            margin: (theme) => theme.spacing(10, 0, 10, 10),
           }}
         >
-          <RegisterIllustration
+          {/* <RegisterIllustration
             alt="register-illustration"
             src={`/images/pages/${videoSource}.mp4`}
             autoPlay
             loop
           />
-          <FooterIllustrationsV2 />
+          <FooterIllustrationsV2 /> */}
         </Box>
       ) : null}
       <RightWrapper>
