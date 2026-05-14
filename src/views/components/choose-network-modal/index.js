@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import toast from 'react-hot-toast';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
@@ -12,6 +12,7 @@ import IconButton from "@mui/material/IconButton";
 import Fade from "@mui/material/Fade";
 import { styled } from "@mui/material/styles";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
+import isMobile from "is-mobile";
 
 const CustomCloseButton = styled(IconButton)(({ theme }) => ({
   top: 0,
@@ -32,12 +33,14 @@ const Transition = forwardRef(function Transition(props, ref) {
   return <Fade ref={ref} {...props} />;
 });
 
+const METAMASK_WALLET_ID = process.env.NEXT_PUBLIC_METAMASK_WALLET_ID;
+
 const networks = [
   { 
     name: 'Metamask', 
     icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`} />, 
     deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK,
-    walletId: process.env.NEXT_PUBLIC_METAMASK_WALLET_ID 
+    walletId: METAMASK_WALLET_ID,
   },
   { 
     name: 'Trust Wallet', 
@@ -64,18 +67,37 @@ const NetworkSelector = ({ open, onClose }) => {
     if (network.isWalletConnect) {
       openWeb3Modal();
     } else if (network.walletId) {
-      // Trigger specific wallet connection via Web3Modal
-      // This is the most reliable way to handle mobile browser connections
-      openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
-      
-      // Provide guidance to the user since mobile browsers often show an app picker
-      toast("Please select the wallet app (not Chrome) to connect", {
-        icon: '👛',
-        duration: 5000,
+      const noInjected = typeof window !== "undefined" && !window?.ethereum;
+      const isMetaMaskRow =
+        METAMASK_WALLET_ID && network.walletId === METAMASK_WALLET_ID;
+
+      // Mobile Chrome has no extension. Web3Modal opens a https://metamask.app.link/wc?… URL in the
+      // same tab (_self); Android often offers "Chrome" which cannot finish WalletConnect — so nothing
+      // happens. Opening via MetaMask's dapp link loads this site inside MetaMask (injected provider).
+      if (isMobile() && noInjected && isMetaMaskRow) {
+        const target = encodeURIComponent(window.location.href);
+        window.location.href = `https://metamask.app.link/dapp/${target}`;
+        toast("Opening MetaMask… Continue in the MetaMask app browser.", {
+          icon: "👛",
+          duration: 5000,
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+        return;
+      }
+
+      openWeb3Modal({ view: "ConnectWallet", walletId: network.walletId });
+
+      toast("When your phone asks how to open the link, choose your wallet app (not Chrome).", {
+        icon: "👛",
+        duration: 6000,
         style: {
-          borderRadius: '10px',
-          background: '#333',
-          color: '#fff',
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
         },
       });
     } else {

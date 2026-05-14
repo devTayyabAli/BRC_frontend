@@ -34,6 +34,7 @@ import { ENV } from "src/configs/env";
 import { keyframes } from "@emotion/react";
 import isMobile from "is-mobile";
 import { resetCurrentUser } from "src/store/apps/auth/currentUserSlice";
+import NetworkSelector from "src/views/components/choose-network-modal";
 const bounce2 = keyframes`
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -94,6 +95,7 @@ const LoginPage = () => {
   const [payload, setPayload] = useState(null);
   const [showWalletError, setShowWalletError] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [networkPickerOpen, setNetworkPickerOpen] = useState(false);
   const { settings } = useSettings();
 
   const hidden = useMediaQuery(theme.breakpoints.down("md"));
@@ -181,6 +183,7 @@ const LoginPage = () => {
   return (
     <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
       <Form>
+        <NetworkSelector open={networkPickerOpen} onClose={() => setNetworkPickerOpen(false)} />
         <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
           {!hidden ? (
             <Box
@@ -337,7 +340,12 @@ const LoginPage = () => {
                         type="button"
                         variant="contained"
                         sx={{ mb: spacing(4) }}
-                        onClick={() => open({ view: "Networks" })}
+                        onClick={() => {
+                          if (typeof window !== "undefined" && isMobile() && !window?.ethereum) {
+                            return setNetworkPickerOpen(true);
+                          }
+                          open({ view: "Networks" });
+                        }}
                       >
                         Connect Wallet
                       </Button>

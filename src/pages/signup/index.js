@@ -60,6 +60,7 @@ import { Select, MenuItem, FormControl } from "@mui/material";
 // Other imports
 import { countryCodesList } from "src/constants/conuntryCodeList";
 import isMobile from "is-mobile";
+import NetworkSelector from "src/views/components/choose-network-modal";
 const RegisterIllustration = styled("video")(({ theme }) => ({
   // zIndex: 2,
   // maxHeight: 600,
@@ -182,6 +183,7 @@ const Register = () => {
   const [loader, setLoader] = useState(null);
   const [email, setEmail] = useState("");
   const [termsChecked, setTermsChecked] = useState(false);
+  const [networkPickerOpen, setNetworkPickerOpen] = useState(false);
 
   // const imageSource =
   //   skin === "bordered"
@@ -508,7 +510,9 @@ const Register = () => {
     }
   }, [router.pathname, address, walletStatus]);
   return (
-    <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
+    <>
+      <NetworkSelector open={networkPickerOpen} onClose={() => setNetworkPickerOpen(false)} />
+      <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
       {!hidden ? (
         <Box
           sx={{
@@ -758,7 +762,12 @@ const Register = () => {
                 : (
                   <>
                     <Button
-                      onClick={() => open({ view: "Networks" })}
+                      onClick={() => {
+                        if (typeof window !== "undefined" && isMobile() && !window?.ethereum) {
+                          return setNetworkPickerOpen(true);
+                        }
+                        open({ view: "Networks" });
+                      }}
                       fullWidth
                       type="button"
                       variant="contained"
@@ -857,6 +866,7 @@ const Register = () => {
         </Box>
       </RightWrapper>
     </Box>
+    </>
   );
 };
 
