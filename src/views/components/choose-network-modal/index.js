@@ -32,9 +32,24 @@ const Transition = forwardRef(function Transition(props, ref) {
 });
 
 const networks = [
-  { name: 'Metamask', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`} />, deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK },
-  { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`} />, deepLink: process.env.NEXT_PUBLIC_TRUST_DEEP_LINK },
-  { name: 'Token Pocket Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/token-pocket.webp`} />, deepLink: process.env.NEXT_PUBLIC_TP_DEEP_LINK },
+  { 
+    name: 'Metamask', 
+    icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`} />, 
+    deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK,
+    walletId: process.env.NEXT_PUBLIC_METAMASK_WALLET_ID 
+  },
+  { 
+    name: 'Trust Wallet', 
+    icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`} />, 
+    deepLink: process.env.NEXT_PUBLIC_TRUST_DEEP_LINK,
+    walletId: process.env.NEXT_PUBLIC_TRUST_WALLET_ID 
+  },
+  { 
+    name: 'Token Pocket Wallet', 
+    icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/token-pocket.webp`} />, 
+    deepLink: process.env.NEXT_PUBLIC_TP_DEEP_LINK,
+    walletId: process.env.NEXT_PUBLIC_TOKEN_POCKET_WALLET
+  },
   { name: 'WalletConnect (Any Wallet)', icon: <Icon icon="tabler:link" fontSize="2.5rem" />, isWalletConnect: true },
 ];
 
@@ -44,9 +59,13 @@ const NetworkSelector = ({ open, onClose }) => {
   const { open: openWeb3Modal } = useWeb3Modal();
 
   const handleNetworkSelection = (network) => {
+    onClose();
     if (network.isWalletConnect) {
-      onClose();
       openWeb3Modal();
+    } else if (network.walletId) {
+      // Trigger specific wallet connection via Web3Modal
+      // This handles mobile linking/WalletConnect automatically and much more reliably
+      openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
     } else {
       window.location.href = network?.deepLink;
     }
