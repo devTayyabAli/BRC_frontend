@@ -242,14 +242,15 @@ const App = (props) => {
   }, [socket, user?.data?._id]);
 
   useEffect(() => {
-    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
+    const excludedPaths = ["/set-password/[token]", "/login", "/signup", "/wallet-connection-error-guest", "/wallet-connection-error"];
 
     if (router && !excludedPaths.includes(router.pathname)) {
-      if (isMobile() && !window?.ethereum) {
+      // Only redirect if on mobile, no injected provider, and no wallet connected
+      if (isMobile() && !window?.ethereum && !user?.data?.walletAddress) {
         router.push("/wallet-connection-error-guest");
       }
     }
-  }, []);
+  }, [router.pathname, user?.data?.walletAddress]);
 
   return (
     <>

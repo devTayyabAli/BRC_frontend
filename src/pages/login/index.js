@@ -170,13 +170,13 @@ const LoginPage = () => {
   const backgroundImageUrl = "logInPic";
 
   useEffect(() => {
-    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
+    const excludedPaths = ["/set-password/[token]", "/login", "/signup", "/wallet-connection-error-guest", "/wallet-connection-error"];
     if (router && !excludedPaths.includes(router.pathname)) {
-      if (isMobile() && !window?.ethereum) {
+      if (isMobile() && !window?.ethereum && !walletAddress) {
         router.push("/wallet-connection-error-guest");
       }
     }
-  }, []);
+  }, [router.pathname, walletAddress]);
   return (
     <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
       <Form>

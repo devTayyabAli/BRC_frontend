@@ -15,10 +15,10 @@ if (!projectId) {
 }
 
 const metadata = {
-  name: "Web3Modal",
-  description: "Web3Modal Example",
-  url: "https://web3modal.com",
-  icons: ["https://avatars.githubusercontent.com/u/37784886"],
+  name: "BRC Platform",
+  description: "World's Largest Crypto Earning Platform",
+  url: "https://blackrockcommunity.cloud",
+  icons: ["https://blackrockcommunity.cloud/images/pages/Logo-signup.png"],
 };
 
 // Define your chains based on ENV

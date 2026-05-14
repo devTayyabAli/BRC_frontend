@@ -47,14 +47,14 @@ const WalletConnectionError = () => {
     if (
       address &&
       walletAddress &&
-      address === walletAddress &&
-      window?.ethereum
+      address === walletAddress
     ) {
       router?.back();
     }
   }, [walletAddress, address]);
   const connectWallet = () => {
     if (isMobile() && !window.ethereum) {
+      // Allow user to choose between deep links (NetworkSelector) or Web3Modal (WalletConnect)
       return setOpenModal(true);
     }
     open({ view: "Networks" });

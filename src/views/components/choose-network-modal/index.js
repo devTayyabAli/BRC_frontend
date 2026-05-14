@@ -31,17 +31,24 @@ const Transition = forwardRef(function Transition(props, ref) {
 });
 
 const networks = [
-  { name: 'Metamask', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`}/>,deepLink:process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK},
-  { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`}/>,deepLink:process.env.NEXT_PUBLIC_TRUST_DEEP_LINK },
-  { name: 'Token Pocket Wallet', icon: <img style={{ width: "40px", height: "40px"  }} src={`/images/pages/token-pocket.webp`}/>,deepLink:process.env.NEXT_PUBLIC_TP_DEEP_LINK },
-  // { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px"  }} src={`/images/pages/trust-wallet.jpg`}/> },
+  { name: 'Metamask', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`}/>, deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK },
+  { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`}/>, deepLink: process.env.NEXT_PUBLIC_TRUST_DEEP_LINK },
+  { name: 'Token Pocket Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/token-pocket.webp`}/>, deepLink: process.env.NEXT_PUBLIC_TP_DEEP_LINK },
+  { name: 'WalletConnect (Any Wallet)', icon: <Icon icon="tabler:link" fontSize="2.5rem" />, isWalletConnect: true },
 ];
 
 
 const NetworkSelector = ({ open, onClose }) => {
 
+  const { open } = useWeb3Modal();
+
   const handleNetworkSelection = (network) => {
-    window.open(network?.deepLink, '_blank');
+    if (network.isWalletConnect) {
+      onClose();
+      open();
+    } else {
+      window.open(network?.deepLink, '_blank');
+    }
   };
 
   return (
