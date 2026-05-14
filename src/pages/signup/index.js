@@ -166,7 +166,7 @@ const Register = () => {
 
   //** web3
   const { open } = useWeb3Modal();
-  const { address } = useAccount();
+  const { address, status: walletStatus } = useAccount();
   const { chain } = useValidateAccount();
   const { disconnect } = useDisconnect()
   const { switchNetwork } = useSwitchNetwork({
@@ -432,7 +432,7 @@ const Register = () => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values) => {
-      if (chain.id !== ENV.chainId) {
+      if (chain?.id !== ENV.chainId) {
         return switchNetwork?.(ENV.chainId);
       }
       signup(values);
@@ -494,13 +494,19 @@ const Register = () => {
 
   const backgroundImageUrl = "logInPic";
   useEffect(() => {
-    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
-    if (router && !excludedPaths.includes(router.pathname)) {
-      if (isMobile() && !window?.ethereum) {
-        router.push("/wallet-connection-error-guest");
-      }
+    const excludedPaths = [
+      "/set-password/[token]",
+      "/login",
+      "/signup",
+      "/wallet-connection-error-guest",
+      "/wallet-connection-error",
+    ];
+    if (!router || excludedPaths.includes(router.pathname)) return;
+    if (walletStatus === "reconnecting" || walletStatus === "connecting") return;
+    if (isMobile() && !window?.ethereum && !address) {
+      router.push("/wallet-connection-error-guest");
     }
-  }, []);
+  }, [router.pathname, address, walletStatus]);
   return (
     <Box className="content-right" sx={{ backgroundColor: "background.paper" }}>
       {!hidden ? (

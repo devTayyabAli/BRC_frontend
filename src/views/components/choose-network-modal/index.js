@@ -1,4 +1,5 @@
 import React, { useState, forwardRef } from 'react';
+import toast from 'react-hot-toast';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -62,22 +63,23 @@ const NetworkSelector = ({ open, onClose }) => {
     onClose();
     if (network.isWalletConnect) {
       openWeb3Modal();
-    } else {
-      const ua = navigator.userAgent.toLowerCase();
-      const isAndroid = ua.indexOf("android") > -1;
+    } else if (network.walletId) {
+      // Trigger specific wallet connection via Web3Modal
+      // This is the most reliable way to handle mobile browser connections
+      openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
       
-      if (isAndroid && network.name === 'Metamask') {
-        window.location.href = `intent://dapp/blackrockcommunity.cloud/login#Intent;scheme=metamask;package=com.wallet.metamask;end`;
-      } else if (isAndroid && network.name === 'Trust Wallet') {
-        window.location.href = `intent://open_url?url=https://blackrockcommunity.cloud/login#Intent;scheme=trust;package=com.wallet.crypto.trustapp;end`;
-      } else if (isAndroid && network.name === 'Token Pocket Wallet') {
-        window.location.href = `intent://open?params=%7B%22url%22%3A%22https%3A%2F%2Fblackrockcommunity.cloud%2Flogin%22%7D#Intent;scheme=tpdapp;package=vip.mytokenpocket;end`;
-      } else if (network.walletId) {
-        // Fallback to Web3Modal for iOS/Other or if specific intent fails
-        openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
-      } else {
-        window.location.href = network?.deepLink;
-      }
+      // Provide guidance to the user since mobile browsers often show an app picker
+      toast("Please select the wallet app (not Chrome) to connect", {
+        icon: '👛',
+        duration: 5000,
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+        },
+      });
+    } else {
+      window.location.href = network?.deepLink;
     }
   };
 

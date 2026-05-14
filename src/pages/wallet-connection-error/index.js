@@ -35,7 +35,7 @@ const WalletConnectionError = () => {
   const [walletAddress, setWalletAddress] = useState("");
   const [openModal, setOpenModal] = useState(false);
   const { open } = useWeb3Modal();
-  const { address } = useAccount();
+  const { address, isConnected } = useAccount();
   const router = useRouter();
   const backgroundImageUrl = "pre-loader-new";
   useEffect(() => {
@@ -86,7 +86,7 @@ const WalletConnectionError = () => {
         }}
       >
         <BoxWrapper>
-          {!address || !window?.ethereum ? (
+          {!isConnected || !address ? (
             <>
               <Typography variant="h4" sx={{ mt: 10 }}>
                 Wallet Not Connected :(

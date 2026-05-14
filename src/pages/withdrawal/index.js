@@ -176,7 +176,7 @@ const Withdrawal = () => {
     }
   };
   const handleSubmit = async () => {
-    if (chain.id !== ENV.chainId) {
+    if (chain?.id !== ENV.chainId) {
       return switchNetwork?.(ENV.chainId);
     }
     withdrawAmount();

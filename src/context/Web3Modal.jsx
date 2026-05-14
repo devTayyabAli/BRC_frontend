@@ -1,5 +1,5 @@
 // ** Web3 Imports
-import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
+import { createWeb3Modal } from "@web3modal/wagmi/react";
 import { WagmiConfig, configureChains, createConfig } from "wagmi";
 import { bsc, bscTestnet,sepolia } from 'wagmi/chains'; // Corrected import
 import { InjectedConnector } from "wagmi/connectors/injected";
@@ -14,12 +14,16 @@ if (!projectId) {
   throw new Error("Error: NEXT_PUBLIC_WEB3_PROJECT_ID is not defined. Please set it in your .env file.");
 }
 
+// WalletConnect validates metadata.url against the site origin; keep it aligned with deployment.
+const appOrigin = (ENV.frontendBaseUrl || "").replace(/\/$/, "") || "https://blackrockcommunity.cloud";
 const metadata = {
   name: "BRC Platform",
   description: "World's Largest Crypto Earning Platform",
-  url: "https://blackrockcommunity.cloud",
-  icons: ["https://blackrockcommunity.cloud/images/pages/Logo-signup.png"],
+  url: appOrigin,
+  icons: [`${appOrigin}/images/pages/Logo-signup.png`],
 };
+
+const walletConnectWalletIds = (ENV?.wallets || []).filter(Boolean);
 
 // Define your chains based on ENV
 const activeChains = [];
@@ -103,7 +107,8 @@ createWeb3Modal({
   wagmiConfig,
   projectId, // This projectId is for the Web3Modal UI and WalletConnect protocol
   chains,
-  includeWalletIds: ENV?.wallets?.map((wallet) => wallet),
+  // Omit when env wallet IDs are missing — an empty/undefined list breaks the modal on mobile.
+  ...(walletConnectWalletIds.length > 0 ? { includeWalletIds: walletConnectWalletIds } : {}),
 });
 
 export function Web3Modal({ children }) {

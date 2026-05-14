@@ -102,7 +102,7 @@ const LoginPage = () => {
 
   //** web3
   const { open } = useWeb3Modal();
-  const { address: walletAddress } = useAccount();
+  const { address: walletAddress, status: walletStatus } = useAccount();
   const { chain } = useValidateAccount();
   const { disconnect } = useDisconnect()
   const { switchNetwork } = useSwitchNetwork({
@@ -127,7 +127,7 @@ const LoginPage = () => {
 
   const onSubmit = async (values) => {
     setPayload(values);
-    if (chain.id !== ENV.chainId) {
+    if (chain?.id !== ENV.chainId) {
       return switchNetwork?.(ENV.chainId);
     }
     login(values);
@@ -172,11 +172,12 @@ const LoginPage = () => {
   useEffect(() => {
     const excludedPaths = ["/set-password/[token]", "/login", "/signup", "/wallet-connection-error-guest", "/wallet-connection-error"];
     if (router && !excludedPaths.includes(router.pathname)) {
+      if (walletStatus === "reconnecting" || walletStatus === "connecting") return;
       if (isMobile() && !window?.ethereum && !walletAddress) {
         router.push("/wallet-connection-error-guest");
       }
     }
-  }, [router.pathname, walletAddress]);
+  }, [router.pathname, walletAddress, walletStatus]);
   return (
     <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
       <Form>

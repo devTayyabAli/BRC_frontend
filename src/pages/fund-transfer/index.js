@@ -177,7 +177,7 @@ const FundTransfer = () => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       setPayload(values);
-      if (chain.id !== ENV.chainId) {
+      if (chain?.id !== ENV.chainId) {
         return switchNetwork?.(ENV.chainId);
       }
       transferFunds(values);

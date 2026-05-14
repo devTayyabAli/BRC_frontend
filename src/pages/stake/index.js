@@ -146,7 +146,7 @@ const Stake = () => {
   const { stakeLimitInUSDC, refetchMinUSDC, refetchMaxUSDC } =
     useReadSakeLimitInUSDC(stakeLimit.min, stakeLimit.max);
   const handleSubmit = async () => {
-    if (chain.id !== ENV.chainId) {
+    if (chain?.id !== ENV.chainId) {
       return switchNetwork?.(ENV.chainId);
     }
     if (availableUSDC < stakeLimitInUSDC?.min) {

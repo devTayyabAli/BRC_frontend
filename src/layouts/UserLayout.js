@@ -27,7 +27,7 @@ import isMobile from "is-mobile";
 const UserLayout = ({ children, contentHeightFixed }) => {
   // ** Hooks
   const { settings, saveSettings } = useSettings()
-  const { address } = useAccount();
+  const { address, status } = useAccount();
   const router = useRouter();
   const user = useSelector((state) => state?.login?.user?.data);
   const validateWallet = () => {
@@ -57,13 +57,20 @@ const UserLayout = ({ children, contentHeightFixed }) => {
     settings.layout = 'vertical'
   }
   useEffect(() => {
-    const excludedPaths = ["/set-password/[token]", "/login", "/signup"];
-    if (router && !excludedPaths.includes(router.pathname)) {
-      if (isMobile() && !window?.ethereum) {
-        router.push("/wallet-connection-error-guest");
-      }
+    const excludedPaths = [
+      "/set-password/[token]",
+      "/login",
+      "/signup",
+      "/wallet-connection-error-guest",
+      "/wallet-connection-error",
+    ];
+    if (!router || excludedPaths.includes(router.pathname)) return;
+    if (status === "reconnecting" || status === "connecting") return;
+    // Mobile Chrome has no injected extension; WalletConnect still provides `address`.
+    if (isMobile() && !window?.ethereum && !address) {
+      router.push("/wallet-connection-error-guest");
     }
-  }, []);
+  }, [router.pathname, address, status]);
 
   return (
     <Layout
