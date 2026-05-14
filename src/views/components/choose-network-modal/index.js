@@ -48,7 +48,7 @@ const NetworkSelector = ({ open, onClose }) => {
       onClose();
       openWeb3Modal();
     } else {
-      window.open(network?.deepLink, '_blank');
+      window.location.href = network?.deepLink;
     }
   };
 
