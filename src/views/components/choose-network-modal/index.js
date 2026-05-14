@@ -62,12 +62,22 @@ const NetworkSelector = ({ open, onClose }) => {
     onClose();
     if (network.isWalletConnect) {
       openWeb3Modal();
-    } else if (network.walletId) {
-      // Trigger specific wallet connection via Web3Modal
-      // This handles mobile linking/WalletConnect automatically and much more reliably
-      openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
     } else {
-      window.location.href = network?.deepLink;
+      const ua = navigator.userAgent.toLowerCase();
+      const isAndroid = ua.indexOf("android") > -1;
+      
+      if (isAndroid && network.name === 'Metamask') {
+        window.location.href = `intent://dapp/blackrockcommunity.cloud/login#Intent;scheme=metamask;package=com.wallet.metamask;end`;
+      } else if (isAndroid && network.name === 'Trust Wallet') {
+        window.location.href = `intent://open_url?url=https://blackrockcommunity.cloud/login#Intent;scheme=trust;package=com.wallet.crypto.trustapp;end`;
+      } else if (isAndroid && network.name === 'Token Pocket Wallet') {
+        window.location.href = `intent://open?params=%7B%22url%22%3A%22https%3A%2F%2Fblackrockcommunity.cloud%2Flogin%22%7D#Intent;scheme=tpdapp;package=vip.mytokenpocket;end`;
+      } else if (network.walletId) {
+        // Fallback to Web3Modal for iOS/Other or if specific intent fails
+        openWeb3Modal({ view: 'ConnectWallet', walletId: network.walletId });
+      } else {
+        window.location.href = network?.deepLink;
+      }
     }
   };
 
