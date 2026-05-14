@@ -1,4 +1,4 @@
-import React, { useState,forwardRef } from 'react';
+import React, { useState, forwardRef } from 'react';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -10,42 +10,43 @@ import Icon from 'src/@core/components/icon'
 import IconButton from "@mui/material/IconButton";
 import Fade from "@mui/material/Fade";
 import { styled } from "@mui/material/styles";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
 
 const CustomCloseButton = styled(IconButton)(({ theme }) => ({
-    top: 0,
-    right: 0,
-    color: "grey.500",
-    position: "absolute",
-    boxShadow: theme.shadows[2],
-    transform: "translate(10px, -10px)",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: `${theme.palette.background.paper} !important`,
-    transition: "transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out",
-    "&:hover": {
-      transform: "translate(7px, -5px)",
-    },
-  }));
+  top: 0,
+  right: 0,
+  color: "grey.500",
+  position: "absolute",
+  boxShadow: theme.shadows[2],
+  transform: "translate(10px, -10px)",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: `${theme.palette.background.paper} !important`,
+  transition: "transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out",
+  "&:hover": {
+    transform: "translate(7px, -5px)",
+  },
+}));
 
 const Transition = forwardRef(function Transition(props, ref) {
-   return <Fade ref={ref} {...props} />;
+  return <Fade ref={ref} {...props} />;
 });
 
 const networks = [
-  { name: 'Metamask', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`}/>, deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK },
-  { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`}/>, deepLink: process.env.NEXT_PUBLIC_TRUST_DEEP_LINK },
-  { name: 'Token Pocket Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/token-pocket.webp`}/>, deepLink: process.env.NEXT_PUBLIC_TP_DEEP_LINK },
+  { name: 'Metamask', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`} />, deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK },
+  { name: 'Trust Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/trust-wallet.jpg`} />, deepLink: process.env.NEXT_PUBLIC_TRUST_DEEP_LINK },
+  { name: 'Token Pocket Wallet', icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/token-pocket.webp`} />, deepLink: process.env.NEXT_PUBLIC_TP_DEEP_LINK },
   { name: 'WalletConnect (Any Wallet)', icon: <Icon icon="tabler:link" fontSize="2.5rem" />, isWalletConnect: true },
 ];
 
 
 const NetworkSelector = ({ open, onClose }) => {
 
-  const { open } = useWeb3Modal();
+  const { open: openWeb3Modal } = useWeb3Modal();
 
   const handleNetworkSelection = (network) => {
     if (network.isWalletConnect) {
       onClose();
-      open();
+      openWeb3Modal();
     } else {
       window.open(network?.deepLink, '_blank');
     }
@@ -53,19 +54,19 @@ const NetworkSelector = ({ open, onClose }) => {
 
   return (
     <div>
-        <Dialog
-         fullWidth
-         open={open}
-         scroll="body"
-         maxWidth="sm"
-         onClose={() => onClose()}
-         TransitionComponent={Transition}
-         onBackdropClick={() => onClose()}
-         sx={{ "& .MuiDialog-paper": { overflow: "visible", maxHeight: "360px", maxWidth: "360px", width: '100%' } }}
-        >
+      <Dialog
+        fullWidth
+        open={open}
+        scroll="body"
+        maxWidth="sm"
+        onClose={() => onClose()}
+        TransitionComponent={Transition}
+        onBackdropClick={() => onClose()}
+        sx={{ "& .MuiDialog-paper": { overflow: "visible", maxHeight: "360px", maxWidth: "360px", width: '100%' } }}
+      >
         <DialogTitle sx={{ textAlign: 'center', fontWeight: 'bolder' }}>Connect Wallet</DialogTitle>
         <CustomCloseButton onClick={() => onClose()}>
-            <Icon icon="tabler:x" fontSize="1.25rem" />
+          <Icon icon="tabler:x" fontSize="1.25rem" />
         </CustomCloseButton>
         <DialogContent>
           <List>
