@@ -39,7 +39,8 @@ const networks = [
   { 
     name: 'Metamask', 
     icon: <img style={{ width: "40px", height: "40px" }} src={`/images/pages/metamask.webp`} />, 
-    deepLink: process.env.NEXT_PUBLIC_METAMASK_DEEP_LINK,
+    // deepLink is computed at click time (see handleNetworkSelection) to capture the current URL
+    getDeepLink: () => `https://metamask.app.link/dapp/${window.location.host + window.location.pathname + window.location.search}`,
     walletId: METAMASK_WALLET_ID,
   },
   { 
@@ -64,44 +65,42 @@ const NetworkSelector = ({ open, onClose }) => {
 
   const handleNetworkSelection = (network) => {
     onClose();
+
+    // "WalletConnect (Any Wallet)" — open the Web3Modal QR/connect flow directly
     if (network.isWalletConnect) {
       openWeb3Modal();
-    } else if (network.walletId) {
-      const noInjected = typeof window !== "undefined" && !window?.ethereum;
-      const isMetaMaskRow =
-        METAMASK_WALLET_ID && network.walletId === METAMASK_WALLET_ID;
+      return;
+    }
 
-      // Mobile Chrome has no extension. Web3Modal opens a https://metamask.app.link/wc?… URL in the
-      // same tab (_self); Android often offers "Chrome" which cannot finish WalletConnect — so nothing
-      // happens. Opening via MetaMask's dapp link loads this site inside MetaMask (injected provider).
-      if (isMobile() && noInjected && isMetaMaskRow) {
-        const target = encodeURIComponent(window.location.href);
-        window.location.href = `https://metamask.app.link/dapp/${target}`;
-        toast("Opening MetaMask… Continue in the MetaMask app browser.", {
-          icon: "👛",
-          duration: 5000,
-          style: {
-            borderRadius: "10px",
-            background: "#333",
-            color: "#fff",
-          },
-        });
-        return;
-      }
+    const noInjected = typeof window !== "undefined" && !window?.ethereum;
 
-      openWeb3Modal({ view: "ConnectWallet", walletId: network.walletId });
-
-      toast("When your phone asks how to open the link, choose your wallet app (not Chrome).", {
+    // On mobile without an injected provider, always prefer the deep link so the
+    // wallet app opens directly instead of showing a WalletConnect modal that
+    // offers "Chrome" (which cannot complete the handshake).
+    const deepLink = network.getDeepLink ? network.getDeepLink() : network.deepLink;
+    if (isMobile() && noInjected && deepLink) {
+      toast("Opening wallet app… Continue inside your wallet's browser.", {
         icon: "👛",
-        duration: 6000,
-        style: {
-          borderRadius: "10px",
-          background: "#333",
-          color: "#fff",
-        },
+        duration: 5000,
+        style: { borderRadius: "10px", background: "#333", color: "#fff" },
       });
-    } else {
-      window.location.href = network?.deepLink;
+      // Small delay so the toast is visible before navigation
+      setTimeout(() => {
+        window.location.href = deepLink;
+      }, 300);
+      return;
+    }
+
+    // Desktop, or mobile with an injected provider — open Web3Modal filtered to
+    // the specific wallet so the user doesn't have to hunt for it in the list.
+    if (network.walletId) {
+      openWeb3Modal({ view: "ConnectWallet", walletId: network.walletId });
+      return;
+    }
+
+    // Last-resort fallback: navigate directly to the deep link
+    if (deepLink) {
+      window.location.href = deepLink;
     }
   };
 
